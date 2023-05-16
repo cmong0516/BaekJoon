@@ -11,14 +11,16 @@ public class BaekJoon2805 {
 
         int[] treeArr = new int[n];
 
+        int min = 0;
+        int max = 0;
+
         for (int i = 0; i < n; i++) {
             treeArr[i] =  sc.nextInt();
         }
 
         Arrays.sort(treeArr);
 
-        int min = 0;
-        int max = 0;
+
 
         while (min < max) {
 
