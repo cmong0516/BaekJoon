@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class BaekJoon2805 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int answer = 0;
 
         int n = sc.nextInt();
         int m = sc.nextInt();
@@ -16,6 +15,9 @@ public class BaekJoon2805 {
 
         for (int i = 0; i < n; i++) {
             treeArr[i] =  sc.nextInt();
+            if (max < treeArr[i]) {
+                max = treeArr[i];
+            }
         }
 
         Arrays.sort(treeArr);
