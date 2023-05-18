@@ -6,13 +6,13 @@ public class BaekJoon5597 {
 
         boolean[] arr = new boolean[30];
 
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < 28; i++) {
             arr[sc.nextInt()-1] = true;
         }
 
-        for (boolean b : arr) {
-            if (!b) {
-                System.out.println(b);
+        for (int i = 0; i < 30; i++) {
+            if (!arr[i]) {
+                System.out.println(i+1);
             }
         }
     }
