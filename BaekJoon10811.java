@@ -18,7 +18,15 @@ public class BaekJoon10811 {
             int a = sc.nextInt();
             int b = sc.nextInt();
 
+            while (a < b) {
+                int temp = arr[a-1];
+                arr[a++-1] = arr[b-1];
+                arr[b---1] = temp;
+            }
+        }
 
+        for (int i : arr) {
+            System.out.print(i + " ");
         }
     }
 }
