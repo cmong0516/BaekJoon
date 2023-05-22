@@ -59,3 +59,7 @@ public class BaekJoon10815 {
         return 0;
     }
 }
+
+// 이분탐색 이용하지 않을시 시간초과
+// Scanner 이용시 시간초과
+// 입력만 BufferedReader 로 변경했더니 정답.
