@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class BaekJoon2512 {
 
     static int[] arr;
+    static int answer = 0;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -20,15 +21,15 @@ public class BaekJoon2512 {
 
         int m = sc.nextInt();
 
-        int left = arr[0];
+        int left = 0;
         int right = arr[n-1];
-        int answer = 0;
+
 
         while (left <= right) {
             System.out.println("left = " + left);
             System.out.println("right = " + right);
             int mid = (left + right) / 2;
-            int sum = 0;
+            long sum = 0;
 
             for (int i : arr) {
                 if (i >= mid) {
