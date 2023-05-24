@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -37,6 +38,7 @@ public class BaekJoon2667 {
         }
 
         System.out.println(list.size());
+        Collections.sort(list);
         for (Integer integer : list) {
             System.out.println(integer);
         }
