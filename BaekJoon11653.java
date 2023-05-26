@@ -10,16 +10,18 @@ public class BaekJoon11653 {
 
         List<Integer> list = new ArrayList<>();
 
-        for (int i = 2; i < n; i++) {
+        for (int i = 2; i <= n; i++) {
             System.out.println("i = " + i);
             System.out.println("n = " + n);
             if (n % i == 0) {
                 n /= i;
                 list.add(i);
-                i = 2;
+                i = 1;
             }
         }
 
-        System.out.println("list = " + list);
+        for (Integer integer : list) {
+            System.out.println(integer);
+        }
     }
 }
