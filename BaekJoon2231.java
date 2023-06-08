@@ -8,14 +8,14 @@ public class BaekJoon2231 {
         // 198 + 1 + 9 + 8 = 216
         // 216 으로 198 을 구해내라.
 
-        String next = sc.next();
+        String next = sc.nextLine();
         int intNext = Integer.parseInt(next);
 
         int answer = 0;
 
         // x + 0~9 + 0~9 + 0~9
 
-        for (int i = intNext - next.length(); i < intNext; i++) {
+        for (int i = intNext - (next.length()*9); i < intNext; i++) {
             int number = i;
             int sum = 0;
 
