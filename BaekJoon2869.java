@@ -10,7 +10,7 @@ public class BaekJoon2869 {
 
         int day = (v-b) / (a-b);
 
-        if ((v - b) % a - b != 0) {
+        if ((v - b) % (a - b) != 0) {
             day++;
         }
 
