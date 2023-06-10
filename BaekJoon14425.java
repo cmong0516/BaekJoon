@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class BaekJoon14425 {
@@ -8,26 +10,21 @@ public class BaekJoon14425 {
 
         int n = sc.nextInt();
         int m = sc.nextInt();
+        int cnt = 0;
 
-        List<String> nList = new ArrayList<>();
-        List<String> mList = new ArrayList<>();
+        Map<String, Integer> map = new HashMap<>();
 
         for (int i = 0; i < n; i++) {
-            nList.add(sc.next());
+            map.put(sc.next(), 1);
         }
 
         for (int i = 0; i < m; i++) {
-            mList.add(sc.next());
-        }
-
-        int cnt = 0;
-
-        for (String s : mList) {
-            if (nList.contains(s)) {
+            if (map.getOrDefault(sc.next(),0) == 1) {
                 cnt++;
             }
         }
 
         System.out.println(cnt);
+
     }
 }
