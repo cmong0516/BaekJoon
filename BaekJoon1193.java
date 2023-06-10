@@ -18,7 +18,7 @@ public class BaekJoon1193 {
                     System.out.print((x - beforeCrossSum) + "/" + (crossLength - (x - beforeCrossSum - 1)));
                     break;
                 } else {
-                    System.out.print((x - beforeCrossSum) + "/" + (crossLength - (x - beforeCrossSum - 1)));
+                    System.out.print(crossLength - (x - beforeCrossSum - 1) + "/" + (x - beforeCrossSum));
                     break;
                 }
             } else {
