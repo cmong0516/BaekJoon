@@ -1,5 +1,8 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class BaekJoon1764 {
@@ -8,29 +11,35 @@ public class BaekJoon1764 {
         int n = sc.nextInt();
         int m = sc.nextInt();
 
-        List<String> list1 = new ArrayList<>();
-        List<String> list2 = new ArrayList<>();
+        Map<String, Integer> map = new HashMap<>();
 
         for (int i = 0; i < n; i++) {
-            list1.add(sc.next());
+            String name = sc.next();
+            map.put(name, map.getOrDefault(name, 0)+1);
         }
 
         for (int i = 0; i < m; i++) {
-            list2.add(sc.next());
+            String name = sc.next();
+            map.put(name, map.getOrDefault(name, 0)+1);
         }
 
-        if (n > m) {
-            for (String s : list1) {
-                if (list2.contains(s)) {
-                    System.out.println(s);
-                }
+        List<String> list = new ArrayList<>(map.keySet());
+        Collections.sort(list);
+
+        int cnt = 0;
+        List<String> result = new ArrayList<>();
+
+        for (String s : list) {
+            if (map.get(s) == 2) {
+                result.add(s);
+                cnt++;
             }
-        } else {
-            for (String s : list2) {
-                if (list1.contains(s)) {
-                    System.out.println(s);
-                }
-            }
+        }
+
+        System.out.println(cnt);
+
+        for (String s : result) {
+            System.out.println(s);
         }
     }
 }
