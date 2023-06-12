@@ -1,5 +1,8 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -22,8 +25,12 @@ public class BaekJoon7785 {
             }
         }
 
-        for (String s : map.keySet()) {
-            System.out.println(map.get(s));
+        List<String> list = new ArrayList<>(map.keySet());
+
+        list.sort(Collections.reverseOrder());
+
+        for (String s : list) {
+            System.out.println(s);
         }
     }
 }
