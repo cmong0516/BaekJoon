@@ -4,16 +4,16 @@ public class BaekJoon1189 {
 
     static int R,C,K;
     static char[][]map;
-    static int count = 0;
+    static int count;
     static int[]dx = {0,1,0,-1}, dy = {1, 0, -1, 0};
-
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         R = sc.nextInt();
-        K = sc.nextInt();
         C = sc.nextInt();
+        K = sc.nextInt();
+
         sc.nextLine();
 
         map = new char[R][C];
