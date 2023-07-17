@@ -6,7 +6,7 @@ public class BaekJoon1735 {
 
         int a = sc.nextInt();
         int b = sc.nextInt();
-
-
+        int c = sc.nextInt();
+        int d = sc.nextInt();
     }
 }
