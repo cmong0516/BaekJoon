@@ -7,7 +7,7 @@ public class BaekJoon4134 {
 
         for (int i = 0; i < t; i++) {
             int n = sc.nextInt();
-            int nextPrime = findNextPrime(n);
+            Long nextPrime = findNextPrime(Long.valueOf(n));
             System.out.println(nextPrime);
         }
     }
