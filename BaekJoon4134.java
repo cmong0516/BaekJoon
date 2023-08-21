@@ -14,15 +14,15 @@ public class BaekJoon4134 {
 
     public static Long findNextPrime(Long number) {
         while (true) {
-            number++;
             if (isPrime(number)) {
                 return number;
             }
+            number++;
         }
     }
 
     public static boolean isPrime(Long number) {
-        if (number == 1) {
+        if (number == 1 || number == 0) {
             return false;
         }
 
@@ -34,6 +34,4 @@ public class BaekJoon4134 {
 
         return true;
     }
-
-
 }
