@@ -1,41 +1,31 @@
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class BaekJoon17103 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
+        int n = sc.nextInt();
 
-        for (int i = 0; i < t; i++) {
-            int n = sc.nextInt();
-            System.out.println(countGBP(n));
-        }
-    }
-
-    public static boolean isPrime(int number) {
-        if (number == 1) {
-            return false;
-        }
-
-        for (int i = 2; i <= Math.sqrt(number); i++) {
-            if (number % i == 0) {
-                return false;
+        boolean[] prime = new boolean[1000001];
+        prime[0] = true;
+        prime[1] = true;
+        for (int i = 2; i <= Math.sqrt(1000000); i++) {
+            if (prime[i]) {
+                continue;
+            }
+            for (int j = i * i; j < 1000001; j += i) {
+                prime[j] = true;
             }
         }
 
-        return true;
-    }
-
-    public static int countGBP(int number) {
-
-        Map<Integer, Integer> map = new HashMap<>();
-
-        for (int i = 1; i < number; i++) {
-            if (isPrime(i) && isPrime(number - i) && !map.containsKey(i) && !map.containsValue(i)) {
-                map.put(i, number - i);
+        for (int i = 0; i < n; i++) {
+            int cnt = 0;
+            int tmp = sc.nextInt();
+            for (int j = 2; j <= tmp / 2; j++) {
+                if (!prime[j] && !prime[tmp - j]) {
+                    cnt++;
+                }
             }
+            System.out.println(cnt);
         }
-        return map.size();
     }
 }
