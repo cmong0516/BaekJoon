@@ -7,7 +7,7 @@ public class BaekJoon13909 {
 
         int count = 0;
 
-        for (int i = 1; i*i < n; i++) {
+        for (int i = 1; i*i <= n; i++) {
             count++;
         }
 
