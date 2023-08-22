@@ -1,63 +1,45 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Stack;
 
 public class BaekJoon28278 {
 
-    static Scanner sc = new Scanner(System.in);
-    static Stack<Integer> stack = new Stack<>();
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
 
-    public static void main(String[] args) {
+        int n = Integer.parseInt(br.readLine());
 
-        int n = sc.nextInt();
+        Stack<Integer> stack = new Stack<>();
 
         for (int i = 0; i < n; i++) {
-            int order = sc.nextInt();
-            if (order == 1) {
+            String[] command = br.readLine().split(" ");
+            int order = Integer.parseInt(command[0]);
 
-                method1(sc.nextInt());
-            }
-            if (order == 2) {
-                method2();
-            }
-            if (order == 3) {
-                method3();
-            }
-            if (order == 4) {
-                method4();
-            }
-            if (order == 5) {
-                method5();
+            switch (order) {
+                case 1:
+                    stack.push(Integer.parseInt(command[1]));
+                    break;
+                case 2:
+                    if (!stack.isEmpty()) {
+                        sb.append(stack.pop()).append("\n");
+                    } else {
+                        sb.append("-1").append("\n");
+                    }
+                    break;
+                case 3:
+                    sb.append(stack.size()).append("\n");
+                    break;
+                case 4:
+                    sb.append(stack.isEmpty() ? "1\n" : "0\n");
+                    break;
+                case 5:
+                    sb.append(!stack.isEmpty() ? stack.peek() + "\n" : "-1\n");
+                    break;
             }
         }
 
-    }
-
-    public static void method1(int x) {
-        stack.push(x);
-    }
-    public static void method2() {
-        if (!stack.isEmpty()) {
-            Integer pop = stack.pop();
-            System.out.println(pop);
-        } else {
-            System.out.println(-1);
-        }
-    }
-    public static void method3() {
-        System.out.println(stack.size());
-    }
-    public static void method4() {
-        if (stack.isEmpty()) {
-            System.out.println(1);
-        } else {
-            System.out.println(0);
-        }
-    }
-    public static void method5() {
-        if (!stack.isEmpty()) {
-            System.out.println(stack.peek());
-        } else {
-            System.out.println(-1);
-        }
+        System.out.print(sb);
     }
 }
