@@ -16,7 +16,6 @@ public class BaekJoon1094 {
                 count++;
             }
         }
-
         System.out.println(count);
     }
 }
