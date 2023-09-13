@@ -1,24 +1,29 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Deque;
 import java.util.LinkedList;
-import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class BaekJoon18258 {
 
     static Deque<Integer> queue = new LinkedList<>();
+    static StringBuilder sb = new StringBuilder();
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
 
-        int n = sc.nextInt();
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        for (int i = 0; i <= n; i++) {
-            String order = sc.nextLine();
-            String[] split = order.split(" ");
+        int n = Integer.parseInt(br.readLine());
 
+        StringTokenizer order;
 
-            switch (split[0]) {
+        while (n-- > 0) {
+            order = new StringTokenizer(br.readLine(), " ");
+
+            switch (order.nextToken()) {
                 case "push":
-                    push(Integer.parseInt(split[1]));
+                    push(Integer.parseInt(order.nextToken()));
                     break;
                 case "pop":
                     pop();
@@ -35,10 +40,11 @@ public class BaekJoon18258 {
                 case "back":
                     back();
                     break;
-                default:
-                    break;
+
             }
         }
+
+        System.out.println(sb);
     }
 
     public static void push(int number) {
@@ -47,38 +53,38 @@ public class BaekJoon18258 {
 
     public static void pop() {
         if (queue.isEmpty()) {
-            System.out.println("-1");
+            sb.append(-1).append('\n');
         } else {
             Integer poll = queue.poll();
-            System.out.println(poll);
+            sb.append(poll).append('\n');
         }
     }
 
     public static void size() {
-        System.out.println(queue.size());
+        sb.append(queue.size()).append('\n');
     }
 
     public static void empty() {
         if (queue.isEmpty()) {
-            System.out.println(1);
+            sb.append(1).append('\n');
         } else {
-            System.out.println(0);
+            sb.append(0).append('\n');
         }
     }
 
     public static void front() {
         if (queue.isEmpty()) {
-            System.out.println(-1);
+            sb.append(-1).append('\n');
         } else {
-            System.out.println(queue.peek());
+            sb.append(queue.peek()).append('\n');
         }
     }
 
     public static void back() {
         if (queue.isEmpty()) {
-            System.out.println(-1);
+            sb.append(-1).append('\n');
         } else {
-            System.out.println(queue.peekLast());
+            sb.append(queue.peekLast()).append('\n');
         }
 
 
