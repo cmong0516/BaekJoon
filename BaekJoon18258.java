@@ -14,18 +14,29 @@ public class BaekJoon18258 {
         for (int i = 0; i <= n; i++) {
             String order = sc.nextLine();
             String[] split = order.split(" ");
-            if (split[0].equals("push")) {
-                push(Integer.parseInt(split[1]));
-            } else if (split[0].equals("pop")) {
-                pop();
-            } else if (split[0].equals("size")) {
-                size();
-            } else if (split[0].equals("empty")) {
-                empty();
-            } else if (split[0].equals("front")) {
-                front();
-            } else if (split[0].equals("back")) {
-                back();
+
+
+            switch (split[0]) {
+                case "push":
+                    push(Integer.parseInt(split[1]));
+                    break;
+                case "pop":
+                    pop();
+                    break;
+                case "size":
+                    size();
+                    break;
+                case "empty":
+                    empty();
+                    break;
+                case "front":
+                    front();
+                    break;
+                case "back":
+                    back();
+                    break;
+                default:
+                    break;
             }
         }
     }
