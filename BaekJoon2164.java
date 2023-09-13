@@ -15,14 +15,14 @@ public class BaekJoon2164 {
 
         makeDeque(n);
 
-        while(true){
-            int run = run();
-
-            if (run == 1) {
-                System.out.println(deque.peek());
-                break;
-            }
+        while(deque.size() > 1){
+            deque.poll();
+            Integer poll = deque.poll();
+            deque.offer(poll);
         }
+
+        System.out.println(deque.poll());
+
     }
 
     public static void makeDeque(int n) {
@@ -31,13 +31,5 @@ public class BaekJoon2164 {
         for (int i = 0; i < n; i++) {
             deque.offer(i + 1);
         }
-    }
-
-    public static int run() {
-        deque.poll();
-        Integer poll = deque.poll();
-        deque.offer(poll);
-
-        return deque.size();
     }
 }
