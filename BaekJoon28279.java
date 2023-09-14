@@ -8,10 +8,12 @@ import java.util.StringTokenizer;
 public class BaekJoon28279 {
 
     static Deque<Integer> deque = new LinkedList<>();
+    static StringBuilder sb = new StringBuilder();
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
+
 
         int n = Integer.parseInt(br.readLine());
 
@@ -28,44 +30,45 @@ public class BaekJoon28279 {
                     break;
                 case 3:
                     if (deque.isEmpty()) {
-                        System.out.println(-1);
-
+                        sb.append("-1").append("\n");
                     } else {
-                        System.out.println(deque.pollFirst());
+                        sb.append(deque.pollFirst()).append("\n");
                     }
                     break;
                 case 4:
                     if (deque.isEmpty()) {
-                        System.out.println(-1);
+                        sb.append("-1").append("\n");
                     } else {
-                        System.out.println(deque.pollLast());
+                        sb.append(deque.pollLast()).append("\n");
                     }
                     break;
                 case 5:
-                    System.out.println(deque.size());
+                    sb.append(deque.size()).append("\n");
                     break;
                 case 6:
                     if (deque.isEmpty()) {
-                        System.out.println(1);
+                        sb.append(1).append("\n");
                     } else {
-                        System.out.println(0);
+                        sb.append(0).append("\n");
                     }
                     break;
                 case 7:
                     if (!deque.isEmpty()) {
-                        System.out.println(deque.peekFirst());
+                        sb.append(deque.peekFirst()).append("\n");
                     } else {
-                        System.out.println(-1);
+                        sb.append(-1).append("\n");
                     }
                     break;
                 case 8:
                     if (!deque.isEmpty()) {
-                        System.out.println(deque.peekLast());
+                        sb.append(deque.peekLast()).append("\n");
                     } else {
-                        System.out.println(-1);
+                        sb.append(-1).append("\n");
                     }
                     break;
             }
         }
+
+        System.out.println(sb);
     }
 }
