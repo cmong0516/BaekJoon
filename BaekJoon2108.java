@@ -36,27 +36,30 @@ public class BaekJoon2108 {
 
         boolean flag = false;
 
-        for (int i = min + 4000; i <= max + 4000; i++) {
+        for(int i = min + 4000; i <= max + 4000; i++) {
 
-            // arr[i] 가 양수일때
-            if (arr[i] > 0) {
-
-                if (count < (N + 1) / 2) {
+            if(arr[i] > 0) {
+                if(count < (N + 1) / 2) {
                     count += arr[i];
                     median = i - 4000;
                 }
 
-                if (mode_max < arr[i]) {
+                if(mode_max < arr[i]) {
                     mode_max = arr[i];
                     mode = i - 4000;
                     flag = true;
                 }
 
-
-            } else if (mode_max == arr[i] && flag == true) {
-                mode = i - 4000;
-                flag = false;
+                else if(mode_max == arr[i] && flag == true) {
+                    mode = i - 4000;
+                    flag = false;
+                }
             }
         }
+
+        System.out.println((int)Math.round((double)sum / N));
+        System.out.println(median);
+        System.out.println(mode);
+        System.out.println(max - min);
     }
 }
