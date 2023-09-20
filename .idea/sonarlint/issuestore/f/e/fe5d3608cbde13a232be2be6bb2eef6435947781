@@ -1,0 +1,7 @@
+
+0
+java:S1220""Move this file to a named package.
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(œû¿Ø
+6	java:S131""Add a default case to this switch.(’€€f
+E	java:S106H"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ
