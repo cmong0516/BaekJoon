@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class BaekJoon15649 {
@@ -26,6 +25,7 @@ public class BaekJoon15649 {
     }
 
     public static void dfs(int N, int M, int depth) {
+
         if (depth == M) {
             for (int i : arr) {
                 sb.append(i).append(" ");
@@ -38,23 +38,10 @@ public class BaekJoon15649 {
             if (!visit[i]) {
                 visit[i] = true;
                 arr[depth] = i +1;
-                // i = 0;
-                // arr[0] = 1;
-                // depth == M
-                // sb.append 1
-
-                // i = 1;
-                // arr[0] = 2;
-                // depth == M
-                // sb.append 2
                 dfs(N,M,depth+1);
                 visit[i] = false;
             }
 
         }
-
-
-
-
     }
 }

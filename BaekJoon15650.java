@@ -8,25 +8,26 @@ public class BaekJoon15650 {
     static int[] arr;
     static boolean[] visit;
     static StringBuilder sb = new StringBuilder();
+    static int N, M;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int N = Integer.parseInt(st.nextToken());
-        int M = Integer.parseInt(st.nextToken());
+        N = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
 
         arr = new int[M];
         visit = new boolean[N];
 
-        dfs(N, M, 0);
+        dfs(1,0);
 
         System.out.println(sb);
 
 
     }
 
-    public static void dfs(int N, int M, int depth) {
+    public static void dfs(int at, int depth) {
         if (depth == M) {
             for (int i : arr) {
                 sb.append(i).append(" ");
@@ -36,13 +37,9 @@ public class BaekJoon15650 {
             return;
         }
 
-        for (int i = 0; i < N; i++) {
-            if (!visit[i]) {
-                visit[i] = true;
-                arr[depth] = i+1;
-                dfs(N, M, depth + 1);
-                visit[i] = false;
-            }
+        for (int i = at; i <= N; i++) {
+            arr[depth] = i;
+            dfs(i+1,depth+1);
         }
     }
 
