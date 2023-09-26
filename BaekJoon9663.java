@@ -12,6 +12,10 @@ public class BaekJoon9663 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         N = Integer.parseInt(br.readLine());
         arr = new int[N];
+
+        nQueen(0);
+
+        System.out.println(count);
     }
 
     public static void nQueen(int depth) {
@@ -22,6 +26,9 @@ public class BaekJoon9663 {
 
         for (int i = 0; i < N; i++) {
             arr[depth] = i;
+            if (isPossible(depth)) {
+                nQueen(depth+1);
+            }
         }
     }
 
