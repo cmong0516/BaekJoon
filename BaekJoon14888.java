@@ -1,34 +1,61 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class BaekJoon14888 {
-
-    static int[] arr;
     static int[] operator = new int[4];
+    static int MAX = Integer.MIN_VALUE;
+    static int MIN = Integer.MAX_VALUE;
+    static int[] number;
+    static int N;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int N = Integer.parseInt(st.nextToken());
+        N = Integer.parseInt(st.nextToken());
 
-        arr = new int[N];
+        number = new int[N];
 
         st = new StringTokenizer(br.readLine());
 
         for (int i = 0; i < N; i++) {
-            arr[i] = Integer.parseInt(st.nextToken());
+            number[i] = Integer.parseInt(st.nextToken());
         }
 
         st = new StringTokenizer(br.readLine());
-
         for (int i = 0; i < 4; i++) {
             operator[i] = Integer.parseInt(st.nextToken());
         }
 
-        System.out.println(Arrays.toString(operator));
+        dfs(number[0], 1);
+
+        System.out.println(MAX);
+        System.out.println(MIN);
+
+    }
+
+    public static void dfs(int num, int index) {
+        if (index == N) {
+            MAX = Math.max(MAX, num);
+            MIN = Math.min(MIN, num);
+            return;
+        }
+
+        for (int i = 0; i < 4; i++) {
+            if (operator[i] > 0) {
+                operator[i]--;
+
+                switch (i) {
+                    case 0:	dfs(num + number[index], index + 1);	break;
+                    case 1:	dfs(num - number[index], index + 1);	break;
+                    case 2:	dfs(num * number[index], index + 1);	break;
+                    case 3:	dfs(num / number[index], index + 1);	break;
+                }
+
+                operator[i]++;
+            }
+        }
     }
 }
