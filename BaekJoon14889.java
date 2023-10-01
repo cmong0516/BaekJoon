@@ -8,6 +8,8 @@ public class BaekJoon14889 {
     static int[][] arr;
     static boolean[] visit;
     static int N;
+    static int Min = Integer.MAX_VALUE;
+
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -25,6 +27,9 @@ public class BaekJoon14889 {
                 arr[i][j] = Integer.parseInt(st.nextToken());
             }
         }
+
+        makeTeam(0, 0);
+        System.out.println(Min);
 
 
     }
@@ -66,6 +71,8 @@ public class BaekJoon14889 {
             System.out.println(gap);
             System.exit(0);
         }
+
+        Min = Math.min(gap, Min);
 
 
     }
