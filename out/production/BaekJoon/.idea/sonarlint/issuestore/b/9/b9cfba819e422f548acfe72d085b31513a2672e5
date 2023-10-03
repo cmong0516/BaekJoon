@@ -1,0 +1,8 @@
+
+7
+java:S1220""Move this file to a named package.8»À×ô¬1
+n
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûîèõşÿÿÿÿ8¿À×ô¬1
+L	java:S106"+Replace this use of System.out by a logger.(³ğ¸ûÿÿÿÿ8¯ã­1
+i
+java:S1871'"LThis branch's code block is the same as the block for the branch on line 37.(çŞã8ÃÀ×ô¬1

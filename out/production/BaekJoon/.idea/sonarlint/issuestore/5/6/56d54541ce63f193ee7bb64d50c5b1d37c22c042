@@ -1,0 +1,12 @@
+
+7
+java:S1220""Move this file to a named package.8Ñûéı­1
+p
+java:S3008"NRename this field "MAX" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·üÔ„úÿÿÿÿ8ã«÷ı­1
+k
+java:S3008	"NRename this field "MIN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş¢†8ã«÷ı­1
+n
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûîèõşÿÿÿÿ8ä¿Ç€®1
+F	java:S106""+Replace this use of System.out by a logger.(¾şèt8úİË€®1
+G	java:S106#"+Replace this use of System.out by a logger.(ŞÎÖæ8ûİË€®1
+=	java:S1312""Add a default case to this switch.(ìúÇV8ö³É€®1

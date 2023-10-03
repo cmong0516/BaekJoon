@@ -1,0 +1,12 @@
+
+m	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“êŞå8Ö°¼›¯1
+r	java:S1176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾·àøÿÿÿÿ8×°¼›¯1
+7
+java:S1220""Move this file to a named package.8Ù°¼›¯1
+n
+java:S3008
+"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûîèõşÿÿÿÿ8™±¼›¯1
+k
+java:S3008"NRename this field "Min" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·¬ï³8™±¼›¯1
+L	java:S106 "+Replace this use of System.out by a logger.(ƒæ¬¸øÿÿÿÿ8±¼›¯1
+L	java:S106G"+Replace this use of System.out by a logger.(Ó¿Åçûÿÿÿÿ8•ÛÀ›¯1
