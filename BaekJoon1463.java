@@ -23,11 +23,9 @@ public class BaekJoon1463 {
             }else if (N % 3 == 0) {
                 dp[N] = Math.min(solve(N / 3), solve(N - 1)) + 1;
             }
-            // 2로만 나눠지는 경우
             else if (N % 2 == 0) {
                 dp[N] = Math.min(solve(N / 2), solve(N - 1)) + 1;
             }
-            // 2와 3으로 나누어지지 않는 경우
             else {
                 dp[N] = solve(N - 1) + 1;
             }
