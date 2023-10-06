@@ -1,11 +1,11 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class BaekJoon10844 {
     static Long[][] dp;
     static int N;
+    static long M = 1000000000;
 
     public static void main(String[] args) throws IOException {
         // 10 12 21 23 32 34 43 45 54 56 65 67 76 78 87 89 98
@@ -25,7 +25,7 @@ public class BaekJoon10844 {
             result += solve(N, i);
         }
 
-        System.out.println(result % 1000000000);
+        System.out.println(result % M);
     }
 
 
@@ -45,7 +45,7 @@ public class BaekJoon10844 {
             }
         }
 
-        return dp[digit][value];
+        return dp[digit][value] % M;
     }
 }
 
