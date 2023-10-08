@@ -20,9 +20,14 @@ public class BaekJoon11053 {
             seq[i] = Integer.parseInt(st.nextToken());
         }
 
+        System.out.println(Arrays.toString(dp));
+
         for (int i = 0; i < N; i++) {
             lis(i);
         }
+
+        System.out.println(Arrays.toString(dp));
+        System.out.println(Arrays.toString(seq));
 
         int max = dp[0];
 
@@ -31,10 +36,6 @@ public class BaekJoon11053 {
         }
 
         System.out.println(max);
-
-        System.out.println(Arrays.toString(seq));
-
-        System.out.println(Arrays.toString(dp));
 
     }
 
@@ -52,3 +53,8 @@ public class BaekJoon11053 {
         return dp[N];
     }
 }
+
+
+// lis(0)    dp[0] = 1;
+// lis(1)    dp[1] = 1;    seq[0] < seq[1]    dp[1] = Math.max(dp[1], lis(0) +1)
+// dp[1] = 2
