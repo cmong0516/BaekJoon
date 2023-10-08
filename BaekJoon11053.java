@@ -58,3 +58,11 @@ public class BaekJoon11053 {
 // lis(0)    dp[0] = 1;
 // lis(1)    dp[1] = 1;    seq[0] < seq[1]    dp[1] = Math.max(dp[1], lis(0) +1)
 // dp[1] = 2
+
+// lis(2) dp[2] = 1;  seq[1] < seq[2]  X
+//                    seq[0] < seq[2]  X
+// dp[2] = 1;
+
+// lis(3)  dp[3] = 1;   seq[2] < seq[3]  dp[3] = 2
+//                      seq[1] < seq[3]  dp[3] = 3
+//                      seq[0] < seq[3]  dp[3] = 3
