@@ -1,0 +1,9 @@
+
+7
+java:S1220""Move this file to a named package.8¤Ëð”°1
+n
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûîèõþÿÿÿÿ8²Ëð”°1
+h
+java:S3008"LRename this field "M" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ˆš8²Ëð”°1
+L	java:S106"+Replace this use of System.out by a logger.(ù‡×íÿÿÿÿÿ8·Ëð”°1
+]	java:S1255"<This block of commented-out lines of code should be removed.(Ë¶£ÿÿÿÿÿ8¹Ëð”°1

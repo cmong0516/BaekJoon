@@ -14,6 +14,9 @@ public class BaekJoon11054 {
         arr = new int[N];
         dp = new Integer[N];
 
+        // 1  5 2 1 4 3 4 5 2 1
+        // lis 는 긴거만
+
 
     }
 }

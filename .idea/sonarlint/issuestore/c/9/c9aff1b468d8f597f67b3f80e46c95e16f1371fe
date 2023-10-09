@@ -1,0 +1,11 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ì£‹8ú¯Î°1
+l	java:S117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü£ÿ)8ú¯Î°1
+7
+java:S1220""Move this file to a named package.8ú¯Î°1
+L	java:S106"+Replace this use of System.out by a logger.(‰­›”øÿÿÿÿ8Ü½²Î°1
+L	java:S106"+Replace this use of System.out by a logger.(‰­›”øÿÿÿÿ8‹¿Ù÷°1
+L	java:S106"+Replace this use of System.out by a logger.(ÃÁÏ§øÿÿÿÿ8Œ¿Ù÷°1
+L	java:S106&"+Replace this use of System.out by a logger.(¾ùôŒùÿÿÿÿ8Ü÷°1
+]	java:S125:"<This block of commented-out lines of code should be removed.(Ø²±ùÿÿÿÿ8ÁĞî÷°1
+]	java:S125@"<This block of commented-out lines of code should be removed.(’¥Èîúÿÿÿÿ8¾ê´ø°1
