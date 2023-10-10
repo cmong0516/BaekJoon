@@ -1,0 +1,10 @@
+
+7
+java:S1220""Move this file to a named package.8öé·É¯1
+n
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûîèõşÿÿÿÿ8Šê·É¯1
+v
+java:S3012"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ÄôÔ8’ê·É¯1
+L	java:S106#"+Replace this use of System.out by a logger.(·ÅÜùıÿÿÿÿ8‚ï»É¯1
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8Äİ¿É¯1
