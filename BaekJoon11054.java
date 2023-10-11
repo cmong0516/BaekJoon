@@ -8,11 +8,12 @@ public class BaekJoon11054 {
     static Integer[] lisDp;
     static Integer[] ldsDp;
     static int[] arr;
+    static int N;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int N = Integer.parseInt(br.readLine());
 
+        N = Integer.parseInt(br.readLine());
         arr = new int[N];
         lisDp = new Integer[N];
         ldsDp = new Integer[N];
@@ -27,46 +28,45 @@ public class BaekJoon11054 {
             arr[i] = Integer.parseInt(st.nextToken());
         }
 
-        for (int i = 0; i < N; i++) {
-            lis(i);
-            lds(i);
-        }
+        lis();
+        lds();
 
-        int max = -1;
+        int max = 0;
 
         for (int i = 0; i < N; i++) {
-            max = Math.max(lisDp[i] + ldsDp[i], max);
+            if (max < lisDp[i] + ldsDp[i]) {
+                max = lisDp[i] + ldsDp[i];
+            }
         }
 
-        System.out.println(max -1);
+        System.out.println(max - 1);
 
     }
 
-    public static int lis(int N) {
-        if (lisDp[N] == null) {
-            lisDp[N] = 1;
+    static void lis() {
+        for (int i = 0; i < N; i++) {
+            lisDp[i] = 1;
 
-            for (int i = N-1; i >= 0 ; i--) {
-                if (arr[i] < arr[N]) {
-                    lisDp[N] = Math.max(lisDp[N], lis(i) + 1);
+            for (int j = 0; j < i; j++) {
+                if (arr[j] < arr[i] && lisDp[i] < lisDp[j] + 1) {
+                    lisDp[i] = lisDp[j] +1;
                 }
             }
         }
-
-        return lisDp[N];
     }
 
-    public static int lds(int N) {
-        if (ldsDp[N] == null) {
-            ldsDp[N] = 1;
-        }
+    static void lds() {
+        for (int i = N-1; i >= 0; i--) {
+            ldsDp[i] = 1;
 
-        for (int i = N+1; i <ldsDp.length ; i++) {
-            if (arr[i] < arr[N]) {
-                ldsDp[N] = Math.max(ldsDp[N], lds(i) + 1);
+            for (int j = N-1; j > i ; j--) {
+                if (arr[j] < arr[i] && ldsDp[i] < ldsDp[j] + 1) {
+                    ldsDp[i] = ldsDp[j] + 1;
+                }
             }
         }
-
-        return ldsDp[N];
     }
 }
+
+// top down 방식에선 시간초과가 나온다.
+// bottom up 으로 바꿔보자.
