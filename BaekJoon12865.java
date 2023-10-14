@@ -17,6 +17,15 @@ public class BaekJoon12865 {
 
         // 준서의 최대 무게 K
 
+        // 1 0
+        // 2 0
+        // 3 6
+        // 4  7 , 8
+        // 5 12
+        // 6 13
+        // 7 14
+
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
@@ -34,5 +43,23 @@ public class BaekJoon12865 {
             V[i] = Integer.parseInt(st.nextToken());
         }
 
+        System.out.println(knapsack(N - 1, K));
+
+    }
+
+    public static int knapsack(int i, int k) {
+        if (i < 0) {
+            return 0;
+        }
+
+        if (dp[i][k] == null) {
+            if (W[i] > k) {
+                dp[i][k] = knapsack(i - 1, k);
+            }
+        } else {
+            dp[i][k] = Math.max(knapsack(i - 1, k), knapsack(i - 1, k - W[i]) + V[i]);
+        }
+
+        return dp[i][k];
     }
 }
