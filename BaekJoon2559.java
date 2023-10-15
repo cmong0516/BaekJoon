@@ -14,13 +14,24 @@ public class BaekJoon2559 {
         int N = Integer.parseInt(st.nextToken());
         int K = Integer.parseInt(st.nextToken());
 
-        arr = new int[N];
+        arr = new int[N+1];
 
         st = new StringTokenizer(br.readLine());
 
-        for (int i = 0; i < N; i++) {
-            arr[i] = Integer.parseInt(st.nextToken());
+        for (int i = 1; i <= N; i++) {
+            arr[i] = arr[i-1] + Integer.parseInt(st.nextToken());
         }
+
+        int max = Integer.MIN_VALUE;
+
+        for (int i = K; i <= N; i++) {
+            int rangeSum = arr[i] - arr[i - K];
+            if (max < rangeSum) {
+                max = rangeSum;
+            }
+        }
+
+        System.out.println(max);
 
 
     }
