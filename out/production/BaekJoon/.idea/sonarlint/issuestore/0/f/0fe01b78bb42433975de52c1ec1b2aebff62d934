@@ -1,0 +1,15 @@
+
+7
+java:S1220""Move this file to a named package.8ÓÈŒï²1
+n
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô« Ãúÿÿÿÿ8ÛÈŒï²1
+n
+java:S3008"LRename this field "K" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô« Ãúÿÿÿÿ8ÛÈŒï²1
+i
+java:S3008
+"LRename this field "W" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®üù8ÛÈŒï²1
+i
+java:S3008"LRename this field "V" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( Ÿ™ˆ8ÛÈŒï²1
+A
+java:S1659"Declare "K" on a separate line.(Ô« Ãúÿÿÿÿ8ÜÈŒï²1
+F	java:S106-"+Replace this use of System.out by a logger.(¦©¢[8úÕï²1
