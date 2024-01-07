@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class BaekJoon10986 {
@@ -13,17 +12,25 @@ public class BaekJoon10986 {
         int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
 
-        long[] arr = new long[N + 1];
-
-        arr[0] = 0;
+        long sum = 0;
+        long count[] = new long[M];
+        long result = 0;
 
         st = new StringTokenizer(br.readLine());
 
-        for (int i = 1; i <= N; i++) {
-            arr[i] = arr[i - 1] + Integer.parseInt(st.nextToken());
+        for (int i = 1; i < N + 1; i++) {
+            sum += Integer.parseInt(st.nextToken());
+            sum %= M;
+            count[(int) sum]++;
         }
 
-        System.out.println(Arrays.toString(arr));
+        result += count[0];
+
+        for (int i = 0; i < M; i++) {
+            result += (count[i] * (count[i]-1))/2;
+        }
+
+        System.out.println(result);
 
 
     }

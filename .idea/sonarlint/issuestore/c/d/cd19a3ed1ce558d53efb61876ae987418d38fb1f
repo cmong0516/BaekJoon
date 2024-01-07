@@ -1,10 +1,8 @@
 
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂšŸüÿÿÿÿ8ŠÁÊà³1
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¹÷8ŠÁÊà³1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂšŸüÿÿÿÿ8Ó¸ƒ‹Î1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¹÷8Ó¸ƒ‹Î1
 7
-java:S1220""Move this file to a named package.8ŠÁÊà³1
-R
-java:S1854"5Remove this useless assignment to local variable "M".(ğ¹÷8ÁÊà³1
-C
-java:S1481"&Remove this unused "M" local variable.(ğ¹÷8‘ÁÊà³1
-G	java:S106"+Replace this use of System.out by a logger.(×Æáî8±€Ëà³1
+java:S1220""Move this file to a named package.8Ô¸ƒ‹Î1
+G
+java:S1197"*Move the array designators [] to the type.(™İŸ†8à¸ƒ‹Î1
+L	java:S106!"+Replace this use of System.out by a logger.(®ıáëûÿÿÿÿ8á¸ƒ‹Î1
