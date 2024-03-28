@@ -136,3 +136,7 @@ B
 BaekJoon10986.java,c/d/cd19a3ed1ce558d53efb61876ae987418d38fb1f
 A
 BaekJoon7568.java,7/a/7abad1ca0d319d395b0cb4aeb87680d1041a91b2
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+B
+BaekJoon10828.java,8/5/854417f759dd25bfd86824cde7736866293841be
