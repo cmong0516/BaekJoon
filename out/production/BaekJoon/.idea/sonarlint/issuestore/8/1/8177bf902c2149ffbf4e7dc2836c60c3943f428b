@@ -1,0 +1,14 @@
+
+m
+java:S1104"QMake deque a static final constant or non-public and provide accessors if needed.(ìˆ¼88Ëœµàé1
+p
+java:S1104"NMake sc a static final constant or non-public and provide accessors if needed.(”Ä²ıÿÿÿÿ8Ëœµàé1
+G
+java:S1444"+Make this "public static deque" field final(ìˆ¼88Ëœµàé1
+J
+java:S1444"(Make this "public static sc" field final(”Ä²ıÿÿÿÿ8Ëœµàé1
+7
+java:S1220""Move this file to a named package.8Ëœµàé1
+9
+java:S2386"Make this member "protected".(ìˆ¼88Ìœµàé1
+L	java:S106"+Replace this use of System.out by a logger.(Å­Ëİúÿÿÿÿ8ÀÉçàé1

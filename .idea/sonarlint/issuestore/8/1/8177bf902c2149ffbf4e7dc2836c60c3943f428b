@@ -1,0 +1,20 @@
+
+m
+java:S1104"QMake deque a static final constant or non-public and provide accessors if needed.(μΌ88ν‡‘αι1
+p
+java:S1104"NMake sc a static final constant or non-public and provide accessors if needed.(”Δ²ύÿÿÿÿ8ν‡‘αι1
+p
+java:S1104	"NMake sb a static final constant or non-public and provide accessors if needed.(ρ‚Òζώÿÿÿÿ8ν‡‘αι1
+G
+java:S1444"+Make this "public static deque" field final(μΌ88ξ‡‘αι1
+J
+java:S1444"(Make this "public static sc" field final(”Δ²ύÿÿÿÿ8ξ‡‘αι1
+J
+java:S1444	"(Make this "public static sb" field final(ρ‚Òζώÿÿÿÿ8ξ‡‘αι1
+7
+java:S1220""Move this file to a named package.8ξ‡‘αι1
+9
+java:S2386"Make this member "protected".(μΌ88σ‡‘αι1
+L	java:S106"+Replace this use of System.out by a logger.(­ΛΦώÿÿÿÿ8χ‡‘αι1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(‚ΣΔτ8ψ‡‘αι1

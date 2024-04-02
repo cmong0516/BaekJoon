@@ -144,3 +144,5 @@ A
 BackJoon9012.java,8/3/833b5bdd308003a6345c0c58a2b4b4b2cbb2f3b4
 A
 BaekJoon1158.java,3/3/339c22b31c4281709c2a3723ec2fe00f0ec0bb6d
+B
+BaekJoon10866.java,8/1/8177bf902c2149ffbf4e7dc2836c60c3943f428b
