@@ -148,3 +148,5 @@ B
 BaekJoon10866.java,8/1/8177bf902c2149ffbf4e7dc2836c60c3943f428b
 A
 BaekJoon1935.java,8/e/8e6cf96e67bd819f83b7ffbd372a18590f3854a4
+A
+BaekJoon1966.java,7/6/76935cd37cbba1527b7e74cac2131f0e7de5f285
