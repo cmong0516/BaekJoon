@@ -16,4 +16,4 @@ o
 java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(Çµí‘8¢±óúê1
 I
 java:S1125("'Remove the unnecessary boolean literal.(‘«¡ùÿÿÿÿ8¦±óúê1
-L	java:S1066"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ8†×øúê1
+L	java:S1066"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ8¦±óúê1

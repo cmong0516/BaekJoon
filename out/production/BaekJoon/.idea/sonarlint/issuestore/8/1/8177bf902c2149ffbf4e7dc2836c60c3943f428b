@@ -1,14 +1,20 @@
 
 m
-java:S1104"QMake deque a static final constant or non-public and provide accessors if needed.(ìˆ¼88Ëœµàé1
+java:S1104"QMake deque a static final constant or non-public and provide accessors if needed.(ìˆ¼88í‡‘áé1
 p
-java:S1104"NMake sc a static final constant or non-public and provide accessors if needed.(”Ä²ıÿÿÿÿ8Ëœµàé1
+java:S1104"NMake sc a static final constant or non-public and provide accessors if needed.(”Ä²ıÿÿÿÿ8í‡‘áé1
+p
+java:S1104	"NMake sb a static final constant or non-public and provide accessors if needed.(ñ‚Òæşÿÿÿÿ8í‡‘áé1
 G
-java:S1444"+Make this "public static deque" field final(ìˆ¼88Ëœµàé1
+java:S1444"+Make this "public static deque" field final(ìˆ¼88î‡‘áé1
 J
-java:S1444"(Make this "public static sc" field final(”Ä²ıÿÿÿÿ8Ëœµàé1
+java:S1444"(Make this "public static sc" field final(”Ä²ıÿÿÿÿ8î‡‘áé1
+J
+java:S1444	"(Make this "public static sb" field final(ñ‚Òæşÿÿÿÿ8î‡‘áé1
 7
-java:S1220""Move this file to a named package.8Ëœµàé1
+java:S1220""Move this file to a named package.8î‡‘áé1
 9
-java:S2386"Make this member "protected".(ìˆ¼88Ìœµàé1
-L	java:S106"+Replace this use of System.out by a logger.(Å­Ëİúÿÿÿÿ8ÀÉçàé1
+java:S2386"Make this member "protected".(ìˆ¼88ó‡‘áé1
+L	java:S106"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ8÷‡‘áé1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(‚ÓÄô8ø‡‘áé1

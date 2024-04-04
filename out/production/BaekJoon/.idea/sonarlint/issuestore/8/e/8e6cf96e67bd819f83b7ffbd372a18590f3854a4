@@ -1,0 +1,8 @@
+
+u	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(îãÔµ8äÛ±çé1
+7
+java:S1220""Move this file to a named package.8™Á¯çé1
+r
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(™Ô‹éùÿÿÿÿ8àÁ¯çé1
+C	java:S131""Add a default case to this switch.(ïÏÚ­üÿÿÿÿ8äÁ¯çé1
+L	java:S1060"+Replace this use of System.out by a logger.(¿®êÇıÿÿÿÿ8åÄ²çé1
