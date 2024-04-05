@@ -150,3 +150,5 @@ A
 BaekJoon1935.java,8/e/8e6cf96e67bd819f83b7ffbd372a18590f3854a4
 A
 BaekJoon1966.java,7/6/76935cd37cbba1527b7e74cac2131f0e7de5f285
+A
+BaekJoon1874.java,9/6/965cface72e8699fd76dde499a8704ce4670057c
