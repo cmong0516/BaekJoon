@@ -1,6 +1,6 @@
 
 ]
-java:S1220""Move this file to a named package.8›²úûê1J$d81ed36e-8cbf-486b-a2d6-33ec73fbd15f
+java:S1220""Move this file to a named package.8›²úûê1J$a8459fca-d69e-4dc3-adef-d93ea807e1a8
 ˜
-java:S1149	"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒıÿÿÿÿ8¢²úûê1J$646de20c-4e18-41d8-8d1c-1f5f038d3515
-r	java:S106"+Replace this use of System.out by a logger.(®ıáëûÿÿÿÿ8›†ûûê1J$ca0ae106-9acd-46a8-a98e-09b4fdf5c55f
+java:S1149	"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒıÿÿÿÿ8¢²úûê1J$962882de-e262-4bd8-872d-f1b0ddde418e
+r	java:S106"+Replace this use of System.out by a logger.(®ıáëûÿÿÿÿ8›†ûûê1J$20cced86-e340-4ea5-91bd-d73277838355
